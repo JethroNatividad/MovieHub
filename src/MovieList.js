@@ -8,7 +8,7 @@ import './MovieList.css'
 import noPoster from './noPoster.jpeg'
 
 //api endpoint
-const API_URL = 'http://www.omdbapi.com/?apikey=thewdb&'
+const API_URL = 'https://www.omdbapi.com/?apikey=thewdb&'
 class MovieList extends Component {
     constructor(props) {
         super(props)

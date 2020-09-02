@@ -4,7 +4,7 @@ import noPoster from './noPoster.jpeg'
 import {CircularProgress, Grid, Container} from '@material-ui/core'
 import './Movie.css'
 //api endpoint
-const API_URL = 'http://www.omdbapi.com/?apikey=thewdb&'
+const API_URL = 'https://www.omdbapi.com/?apikey=thewdb&'
 class Movie extends Component {
     constructor(props){
         super(props);
