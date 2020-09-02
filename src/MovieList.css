@@ -1,0 +1,22 @@
+.MovieList .Poster{
+    width: 100%;
+}
+.MovieList .GridListTile{
+    list-style-type: none;
+}
+.MovieList-Movie:hover{
+    cursor: pointer;
+}
+.MovieList{
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+.MovieList-bg{
+    height: fit-content;
+    width: 100%;
+    background: rgb(15,40,180);
+background: -moz-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f28b4",endColorstr="#ffffff",GradientType=1);
+}

@@ -1,0 +1,34 @@
+.Movie img{
+    width: 100%;
+    border:5px solid white
+}.Movie-info div{
+    width: fit-content;
+    margin: 0 auto;
+}
+.Movie{
+    margin-top: 90px;
+}
+.Movie-bg{
+    width: 100%;
+    height: 100%;
+    background: rgb(15,40,180);
+background: -moz-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%);
+background: linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f28b4",endColorstr="#ffffff",GradientType=1);
+}
+.Movie .Bottom{
+    color: white;
+    margin-top: 10px;
+}
+.Movie .Bottom h2{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.Movie .Bottom p{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.Movie .Bottom.b{
+    padding-top: 50px;
+}
