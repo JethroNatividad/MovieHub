@@ -3,6 +3,7 @@ import axios from 'axios'
 import noPoster from './noPoster.jpeg'
 import {CircularProgress, Grid, Container} from '@material-ui/core'
 import './Movie.css'
+//api endpoint
 const API_URL = 'http://www.omdbapi.com/?apikey=thewdb&'
 class Movie extends Component {
     constructor(props){
@@ -13,11 +14,12 @@ class Movie extends Component {
         this.imdbID = this.props.match.params.imdbID
         this.movie = null
     }
+    //runs on page load
     async componentDidMount(){
+        //requests the api endpoint with the imdbId passed as prop
         const res = await axios.get(`${API_URL}i=${this.imdbID}&plot=full`)
         this.movie = res.data
         this.setState({loading: false})
-        console.log(this.movie)
     }
     render() {
         if(this.state.loading){
@@ -47,16 +49,16 @@ class Movie extends Component {
                                 <div>
                                     <h1>{this.movie.Title}</h1>
                                     <h3>{this.movie.Year} <br/> {this.movie.Genre}</h3>
-                                    <p><i class="fa fa-globe" aria-hidden="true"></i> - {this.movie.Language}</p>
-                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> - {this.movie.Runtime} </p>
-                                    <p><i class="fa fa-star" aria-hidden="true"></i> - {this.movie.imdbRating} </p>
+                                    <p><i className="fa fa-globe" aria-hidden="true"></i> - {this.movie.Language}</p>
+                                    <p><i className="fa fa-clock-o" aria-hidden="true"></i> - {this.movie.Runtime} </p>
+                                    <p><i className="fa fa-star" aria-hidden="true"></i> - {this.movie.imdbRating} </p>
                                 </div>
                             </Grid>
-                            <Grid className='Bottom a' xs={12} sm={8}>
+                            <Grid className='Bottom a' item xs={12} sm={8}>
                                 <h2>Plot</h2>
                                 <p>{this.movie.Plot}</p>
                             </Grid>
-                            <Grid className='Bottom b' xs={12} sm={4}>
+                            <Grid className='Bottom b' item xs={12} sm={4}>
                                 <p>Director: {this.movie.Director} </p>
                                 <p>Writer: {this.movie.Writer} </p>
                                 <p>Actors: {this.movie.Actors} </p>

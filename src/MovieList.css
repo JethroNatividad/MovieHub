@@ -4,6 +4,9 @@
 .MovieList .GridListTile{
     list-style-type: none;
 }
+.MovieList-Movie{
+    border-radius: 50px;
+}
 .MovieList-Movie:hover{
     cursor: pointer;
 }
@@ -12,11 +15,15 @@
     margin-top: 90px;
 }
 .MovieList-bg{
-    height: fit-content;
+    min-height: 90vh;
     width: 100%;
     background: rgb(15,40,180);
 background: -moz-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
 background: -webkit-linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
 background: linear-gradient(0deg, rgba(15,40,180,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f28b4",endColorstr="#ffffff",GradientType=1);
+}
+.MovieList-bg h1{
+    font-weight: 400;
+    font-size: 1.5rem;
 }

@@ -109,7 +109,7 @@ export default function Navbar() {
             {list('left')}
           </Drawer>
           <Typography className={classes.title} variant="h6" noWrap>
-            MovieHut
+            MOVIE HUT
           </Typography>
           <NavLink to='/search/'>
               <Button>
